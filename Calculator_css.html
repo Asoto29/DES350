@@ -6,125 +6,134 @@
 
 body {
 	background-color: black;
-	}
-.number {
-	outline: 0;
-	border: none;
-	border-radius: 5px;
-	color: azure;
-	background-color: lightslategray;
-	width: 80px;
-	height: 80px;
-	float: left;
-	font-size: 20px;
-	padding: 0px;
-	margin: 2px;
-	text-align: center;
+	margin-left: 415px;
 	}
 	
-.number:hover {
+.number, .number0, .number1, .number2, .number3, .number4, .number5, .number6, .number7, .number8, .number9 {
 	outline: 0;
 	border: none;
-	border-radius: 5px;
+	border-radius: 100px;
 	color: azure;
-	background-color: darkturquoise;
 	width: 80px;
 	height: 80px;
 	float: left;
-	font-size: 20px;
+	font: bold 32px helvetica, sans-serif;
 	padding: 0px;
-	margin: 2px;
+	margin: 15px;
+	text-align: center;
 	}
 	
 .number1 {
+	background-color:#6AE2B0;
+	}	
+	
+.number2 {
+	background-color:lightskyblue;
+	}	
+	
+.number3 {
+	background-color:#DDAD64;
+	}	
+	
+.number4 {
+	background-color:#D5B731;
+	}	
+	
+.number5 {
+	background-color:#3BBAD9;
+	}	
+	
+.number6 {
+	background-color:#4DD56C;
+	}	
+	
+.number7 {
+	background-color:#E97ED0;
+	}	
+	
+.number8 {
+	background-color:#1369BE;
+	}	
+	
+.number9 {
+	background-color:#73C23C;
+	}	
+	
+.number0 {
+	background-color:#FFD200;
+	}
+.number {
+	background-color:#2D2D2D;
+	}
+.number:hover{
+	background-color:#5A5A5A;
+	}
+	
+.number0:hover, .number1:hover, .number2:hover, .number3:hover, .number4:hover, .number5:hover, .number6:hover, .number7:hover, .number8:hover, .number9:hover {
+	background-color:#2D2D2D;
+	}
+.operator, .operator2 {
 	outline: 0;
 	border: none;
-	border-radius: 5px;
-	color: azure;
-	background-color:lightslategray;
-	width: 164px;
+	border-radius: 100px;
+	color: aliceblue;
+	width: 80px;
 	height: 80px;
 	float: left;
-	font-size: 20px;
 	padding: 0px;
-	margin: 2px;
+	margin: 15px;
 	text-align: center;
 	}
 	
-.number1:hover {
-	background-color: darkturquoise;
+.operator1, .operator3 {
+	outline: 0;
+	border: none;
+	border-radius: 50px;
+	color: aliceblue;
+	width: 190px;
+	height: 80px;
+	float: left;
+	font: bold 32px helvetica, sans-serif;
+	padding: 0px;
+	margin: 15px;
+	text-align: center;
 	}
 	
 .operator {
-	outline: 0;
-	border: none;
-	border-radius: 5px;
-	background-color:crimson;
-	color: aliceblue;
-	width: 80px;
-	height: 80px;
-	float: left;
-	font-size: 20px;
-	padding: 0px;
-	margin: 2px;
-	text-align: center;
-	}
-	
-.operator1 {
-	outline: 0;
-	border: none;
-	border-radius: 5px;
-	background-color: crimson;
-	color: aliceblue;
-	width: 164px;
-	height: 80px;
-	float: left;
-	font-size: 20px;
-	padding: 0px;
-	margin: 2px;
-	text-align: center;
-	}
-	
-.operator:hover{
-	background-color:brown;
-	}
-	
-.operator1:hover{
-	background-color:brown;
+	background-color:deeppink;
+	font: bold 30px helvetica, sans-serif;
 	}
 	
 .operator2 {
-	outline: 0;
-	border: none;
-	border-radius: 5px;
-	background-color:gold;
-	width: 80px;
-	height: 164px;
-	float: left;
-	font-size: 20px;
-	padding: 0px;
-	margin: 2px;
-	text-align: center;
-	position:fixed;
+	background-color: crimson;
+	font: bold 22px helvetica, sans-serif;
 	}
 	
-.operator2:hover{
-	background-color:goldenrod;
+.operator1 { 
+	background-color: crimson;
+	}
+	
+.operator3{
+	background-color:#2CBC12;
+	}
+
+.operator:hover, .operator1:hover, .operator2:hover, .operator3:hover {
+	background-color: #2D2D2D;
 	}
 	
 #display {
 	outline:0;
-	border:solid 2px;
+	border:solid 0px;
 	border-radius: 5px;
 	background-color:transparent;
 	color: white;
-	width: 320px;
-	height: 80px;
+	width: 510px;
+	height: 140px;
 	float: left;
-	font-size: 40px;
-	padding-left: 8px;
-	margin: 2px;
-	text-align:
+	font: bold 95px helvetica, sans-serif;
+	padding-left: 0px;
+	margin: 15px;
+	letter-spacing: 3px;
 	}
 	
 .inputrow {
@@ -134,7 +143,7 @@ body {
 	postion: relative;
 	display: inline-block;
 	}
-	
+
 </style>
 	
 <link href="Calculator.css" rel="stylesheet" type="text/css">
@@ -148,37 +157,35 @@ body {
 <div id="top_display">
 	<input type="text" name="display" id="display" disabled>
 </div>
-	
-<div class= "inputrow">
-	<input type="button" class="operator1" value="C" onClick="calculator.display.value =''">
-	<input type="buttom" class="operator" name="add" value="+" onclick="calculator.display.value +='+'">
-	<input type="buttom" class="operator" name="subtract" value="-" onclick="calculator.display.value +='-'">
-</div>	
 
 <div class= "inputrow">
-	<input type="buttom" class="number" value="1" onclick="calculator.display.value +='1'">
-	<input type="buttom" class="number" value="2" onclick="calculator.display.value +='2'">
-	<input type="buttom" class="number" value="3" onclick="calculator.display.value +='3'">
-	<input type="buttom" class="operator" name="multiply" value="*" onclick="calculator.display.value +='*'">
+	<input type="button" class="number1" value="1" onclick="calculator.display.value +='1'">
+	<input type="button" class="number2" value="2" onclick="calculator.display.value +='2'">
+	<input type="button" class="number3" value="3" onclick="calculator.display.value +='3'">
+	<input type="button" class="operator1" value="AC" onClick="calculator.display.value =''">
 </div>
 
 <div class= "inputrow">
-	<input type="buttom" class="number" value="4" onclick="calculator.display.value +='4'">
-	<input type="buttom" class="number" value="5" onclick="calculator.display.value +='5'">
-	<input type="buttom" class="number" value="6" onclick="calculator.display.value +='6'">
-	<input type="buttom" class="operator" name="divide" value="/" onclick="calculator.display.value +='/'">
+	<input type="button" class="number4" value="4" onclick="calculator.display.value +='4'">
+	<input type="button" class="number5" value="5" onclick="calculator.display.value +='5'">
+	<input type="button" class="number6" value="6" onclick="calculator.display.value +='6'">
+	<input type="button" class="operator" name="add" value="+" onclick="calculator.display.value +='+'">
+	<input type="button" class="operator" name="subtract" value="-" onclick="calculator.display.value +='-'">
 </div>
 	
 <div class= "inputrow">
-	<input type="buttom" class="number" value="7" onclick="calculator.display.value +='7'">
-	<input type="buttom" class="number" value="8" onclick="calculator.display.value +='8'">
-	<input type="buttom" class="number" value="9" onclick="calculator.display.value +='9'">
-	<input type="buttom" class="operator2" name="equals" value="=" onclick="calculator.display.value =eval(calculator.display.value)">
+	<input type="button" class="number7" value="7" onclick="calculator.display.value +='7'">
+	<input type="button" class="number8" value="8" onclick="calculator.display.value +='8'">
+	<input type="button" class="number9" value="9" onclick="calculator.display.value +='9'">
+	<input type="button" class="operator" name="multiply" value="*" onclick="calculator.display.value +='*'">
+	<input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value +='/'">
 </div>
 
 <div class= "inputrow">
-	<input type="buttom" class="number1" value="0" onclick="calculator.display.value +='0'">
-	<input type="buttom" class="number" value="." onclick="calculator.display.value +='.'">
+	<input type="button" class="number0" value="0" onclick="calculator.display.value +='0'">
+	<input type="button" class="number" value="." onclick="calculator.display.value +='.'">
+	<input class="operator2" type="button" value="DEL" onclick="calculator.display.value = calculator.display.value.substr(0,calculator.display.value.length-1)">
+	<input type="button" class="operator3" name="equals" value="=" onclick="calculator.display.value =eval(calculator.display.value)">
 </div>
 
 
