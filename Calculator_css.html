@@ -6,10 +6,17 @@
 
 body {
 	background-color: black;
-	margin-left: 415px;
+	font-family: helvetica, Arial, sans-serif;
+	}
+	
+#myCalculator{
+	width: 550px;
+	margin: auto;
+	padding-left: 3%;
 	}
 	
 .number, .number0, .number1, .number2, .number3, .number4, .number5, .number6, .number7, .number8, .number9 {
+	position: relative;
 	outline: 0;
 	border: none;
 	border-radius: 100px;
@@ -73,6 +80,7 @@ body {
 	background-color:#2D2D2D;
 	}
 .operator, .operator2 {
+	position: relative;
 	outline: 0;
 	border: none;
 	border-radius: 100px;
@@ -86,6 +94,7 @@ body {
 	}
 	
 .operator1, .operator3 {
+	position: relative;
 	outline: 0;
 	border: none;
 	border-radius: 50px;
@@ -122,28 +131,68 @@ body {
 	}
 	
 #display {
+	position: relative;
 	outline:0;
 	border:solid 0px;
 	border-radius: 5px;
 	background-color:transparent;
 	color: white;
-	width: 510px;
+	width: 100%;
 	height: 140px;
 	float: left;
-	font: bold 95px helvetica, sans-serif;
+	font: bold 115px helvetica, sans-serif;
 	padding-left: 0px;
-	margin: 15px;
+	margin: 10px 10px 0px 10px;
 	letter-spacing: 3px;
 	}
 	
 .inputrow {
+	position: relative;
 	width:100%;
 	float: left;
 	padding: 0px;
 	postion: relative;
 	display: inline-block;
-	}
+}
 
+	
+
+	
+
+@media (max-width: 575px) {
+
+.number, .number0, .number1, .number2, .number3, .number4, .number5, .number6, .number7, .number8, .number9 {
+	height: 70px;
+	width: 70px;
+	font: bold 26px helvetica, sans-serif;
+	margin: 10px;
+}
+	
+.operator, .operator2 {
+	height: 70px;
+	width: 70px;
+	font: bold 20px helvetica, sans-serif;
+	margin: 10px;	
+}
+	
+.operator1, .operator3 {
+	height: 70px;
+	width: 160px;
+	font: bold 26px helvetica, sans-serif;
+	margin: 10px;
+}	
+
+#display{
+	font: bold 105px helvetica, sans-serif;		
+}
+	
+#myCalculator{
+	width: 470px;
+	margin: auto;
+	padding-left: 3%;
+}
+}
+	
 </style>
 	
 <link href="Calculator.css" rel="stylesheet" type="text/css">
@@ -152,7 +201,7 @@ body {
 
 <body>
 <form name="calculator"> 
-
+	
 <div id="myCalculator">
 <div id="top_display">
 	<input type="text" name="display" id="display" disabled>
@@ -187,7 +236,6 @@ body {
 	<input class="operator2" type="button" value="DEL" onclick="calculator.display.value = calculator.display.value.substr(0,calculator.display.value.length-1)">
 	<input type="button" class="operator3" name="equals" value="=" onclick="calculator.display.value =eval(calculator.display.value)">
 </div>
-
 
 </div>
 </form>
