@@ -1,0 +1,454 @@
+<!doctype html>
+<html>
+<head>
+
+<style>
+	body{
+		background-color: aqua;
+	}
+	
+	.everything{
+		position: absolute;
+		margin: 8em 0px 0px 35vw;
+		transform: scale(2);
+	}
+	
+/*-----------head------------*/
+	.head{
+		position: absolute;
+		margin: 40px 0px 0px 0px;
+	}
+	
+    .tophead {
+		position:absolute;
+		background-color:rgba(199,182,155,1.00);
+		width: 200px;
+		height: 100px;
+		border-radius: 50%;
+	}
+	
+	.middleheadsquare {
+		position:absolute;
+		background-color:rgba(199,182,155,1.00);
+		width: 200px;
+		height: 50px;
+		margin: 50px 0px 0px 0px;
+	}
+	
+	.middleheadtrapezoid {
+		position:absolute;
+		border-top: 50px solid rgba(199,182,155,1.00);	
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		height: 0;
+		width: 150px;
+		margin: 100px 0px 0px 0px;
+	}
+
+	.bottomheadtrangle{
+		position: absolute;
+		border-top: 50px solid rgba(199,182,155,1.00);
+		border-left: 50px solid transparent;
+		border-right: 50px solid transparent;
+		width: 50px;
+		height: 0px;
+		margin: 150px 0px 0px 25px;
+	}
+
+	.bottomcircle {
+		position: absolute;
+		border-radius: 50%;
+		background-color:rgba(199,182,155,1.00);
+		width: 80px;
+		height: 80px;
+		margin: 130px 0px 0px 60px;
+	}
+/*-----------head------------*/
+
+/*-----------hair------------*/
+	.haircircle{
+		position: absolute;
+		border-radius: 50%;
+		background-color: black;
+		width: 200px;
+		height: 170px;
+		z-index: -1;
+	}
+	
+	.haircircle1{
+		position: absolute;
+		border-radius: 50%;
+		background-color: black;
+		width: 160px;
+		height: 80px;
+		margin: 5px 0px 0px 0px;
+		animation-name: updown;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+	
+	.haircircle2{
+		position: absolute;
+		border-radius: 50%;
+		background-color: black;
+		width: 110px;
+		height: 80px;
+		transform: rotate(45deg);
+		margin: -22px 0px 0px 100px;
+		animation-name: updown;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+	
+	.haircircle3{
+		position: absolute;
+		border-radius: 50%;
+		background-color: black;
+		width: 145px;
+		height: 80px;
+		transform: rotate(-5deg);
+		margin: -50px 0px 0px 0px;
+		animation-name: updown;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+	
+	.haircircle4{
+		position: absolute;
+		border-radius: 50%;
+		background-color: black;
+		width: 140px;
+		height: 90px;
+		transform: rotate(-58deg);
+		margin: -18px 0px 0px -40px;
+		animation-name: updown;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+/*-----------hair------------*/
+	
+/*-----------eyes------------*/
+	.eyeL{
+		position: absolute;
+		background-color: white;
+		border-top-left-radius: 45%;
+		border-top-right-radius: 45%;
+		border-bottom-left-radius: 50%;
+		border-bottom-right-radius: 50%;
+		height: 33px;
+		width: 52px;
+		margin: 100px 0px 0px 25px;
+		animation-name: updown;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+
+	.eyelidL{
+		position: absolute;
+		background-color: #998675;
+		border-top-left-radius: 50%;
+		border-top-right-radius: 50%;
+		height: 12px;
+		width: 52px;
+		margin: 99px 0px 0px 25px;
+		animation-name: eyelid;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+	
+	.eyeblackL{
+		position:absolute;
+		background-color: black;
+		border-radius: 50%;
+		width: 28px;
+		height: 24px;
+		margin: 100px 0px 0px 37px;
+		animation-name: updown;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+	
+	.eyewhiteL{
+		position:absolute;
+		background-color: white;
+		border-radius: 50%;
+		width: 19px;
+		height: 17px;
+		margin:101px 0px 0px 31px;
+		animation-name: updown;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+	
+	.eyebrowL{
+		position:absolute;
+		background-color: black;
+		width: 62px;
+		height: 6px;
+		margin:97px 0px 0px 20px;
+		border-radius: 35%;
+		animation-name: eyebrowL;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+	
+	.eyebagL {
+		position: absolute;
+		background-color: transparent;
+		width: 40px;
+		height: 10px;
+		border-radius: 50%;
+		border-bottom: 2px solid #998675;
+		margin:125px 0px 0px 40px;
+		transform: rotateZ(-15deg);
+		animation-name: updown;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+/*---*/	
+	
+	.eyeR{
+		position: absolute;
+		background-color: white;
+		border-top-left-radius: 45%;
+		border-top-right-radius: 45%;
+		border-bottom-left-radius: 50%;
+		border-bottom-right-radius: 50%;
+		height: 33px;
+		width: 52px;
+		margin: 100px 0px 0px 125px;
+		animation-name: updown;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+
+	.eyelidR{
+		position: absolute;
+		background-color: #998675;
+		border-top-left-radius: 50%;
+		border-top-right-radius: 50%;
+		height: 12px;
+		width: 52px;
+		margin: 99px 0px 0px 125px;
+		animation-name: eyelid;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+	
+	.eyeblackR{
+		position:absolute;
+		background-color: black;
+		border-radius: 50%;
+		width: 28px;
+		height: 24px;
+		margin: 100px 0px 0px 137px;
+		animation-name: updown;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+	
+	.eyewhiteR{
+		position:absolute;
+		background-color: white;
+		border-radius: 50%;
+		width: 19px;
+		height: 17px;
+		margin:101px 0px 0px 131px;
+		animation-name: updown;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+	
+	.eyebrowR{
+		position:absolute;
+		background-color: black;
+		width: 62px;
+		height: 6px;
+		margin:97px 0px 0px 120px;
+		border-radius: 35%;
+		animation-name: eyebrowR;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+	
+	.eyebagR {
+		position: absolute;
+		background-color: transparent;
+		width: 40px;
+		height: 10px;
+		border-radius: 50%;
+		border-bottom: 2px solid #998675;
+		margin:125px 0px 0px 120px;
+		transform: rotateZ(15deg);
+		animation-name: updown;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+/*-----------eyes------------*/
+
+/*-----------nose/mouth------------*/
+	.nose {
+		position: absolute;
+		background-color: transparent;
+		width: 30px;
+		height: 25px;
+		border-radius: 50%;
+		border-bottom: 3px solid #998675;
+		margin:145px 0px 0px 85px;
+		animation-name: updown;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+	
+	.mouth{
+		position: absolute;
+		background-color: black;
+		width: 65px;
+		height: 5px;
+		margin:198px 0px 0px 68px;
+		animation-name: mouth;
+		animation-duration: 5s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+/*-----------nose/mouth------------*/
+		
+/*-----------ears------------*/
+	
+	.earsL{
+		position: absolute;
+		background-color: #998675;
+		width: 25px;
+		height: 45px;
+		border-top-left-radius: 50%;
+		border-bottom-left-radius: 50%;
+		margin:96px 0px 0px -11px;	
+		z-index: -1;
+
+	}
+	
+	.earsR{
+		position: absolute;
+		background-color: #998675;
+		width: 25px;
+		height: 45px;
+		border-top-right-radius: 50%;
+		border-bottom-right-radius: 50%;
+		margin:96px 0px 0px 185px;	
+		z-index: -1;
+
+	}
+	
+	@-webkit-keyframes updown {
+		0% {top:0px; }
+		50%{top:10px; }
+		100%{top:0px; }
+	}
+	
+	@-webkit-keyframes mouth {
+		0% {top:0px; }
+		50%{top:10px;
+			border-radius: 50%;
+			border-bottom: 3px solid black;
+			height:10px;}
+		100%{top:0px; }
+	}
+	
+	@-webkit-keyframes eyelid {
+		0% {height:12px;
+			top:0px;
+			border-bottom-left-radius: 0%;
+			border-bottom-right-radius: 0%; }
+		50%{height:34px;
+			top:10px;
+			border-bottom-left-radius: 50%;
+			border-bottom-right-radius: 50%; }
+		100%{height:12px;		
+			top:0px;
+			border-bottom-left-radius: 0%;
+			border-bottom-right-radius: 0%; }
+	}
+
+	@-webkit-keyframes eyebrowL {
+		0% {top:0px; }
+		50%{top:10px;
+			transform: rotateZ(-10deg);}
+		100%{top:0px; }
+	}
+	
+	@-webkit-keyframes eyebrowR {
+		0% {top:0px; }
+		50%{top:10px;
+			transform: rotateZ(10deg);}
+		100%{top:0px; }
+	}
+</style>
+
+<meta charset="UTF-8">
+<title>Self Portrait</title>
+</head>
+
+<body>
+
+<div class="everything">
+
+<div class="head">
+	<div class="tophead"></div>
+	<div class="middleheadsquare"></div>
+	<div class="middleheadtrapezoid"></div>
+	<div class="bottomheadtrangle"></div>
+	<div class="bottomcircle"></div>
+</div>
+	
+<div class="allhair">
+	<div class="haircircle"></div>
+	<div class="haircircle1"></div>
+	<div class="haircircle2"></div>
+	<div class="haircircle3"></div>
+	<div class="haircircle4"></div>
+</div>
+	
+	<div class="eyeL"></div>
+	<div class="eyeblackL"></div>
+	<div class="eyewhiteL"></div>
+	<div class="eyelidL"></div>	
+	<div class="eyebrowL"></div>	
+	<div class="eyebagL"></div>	
+
+
+
+	<div class="eyeR"></div>
+	<div class="eyeblackR"></div>
+	<div class="eyewhiteR"></div>
+	<div class="eyelidR"></div>	
+	<div class="eyebrowR"></div>
+	<div class="eyebagR"></div>	
+
+	
+	<div class="nose"></div>
+	<div class="mouth"></div>
+
+	<div class="earsL"></div>
+	<div class="earsR"></div>
+
+
+</div>
+</body>
+</html>
